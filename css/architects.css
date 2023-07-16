@@ -5,6 +5,10 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 /* -----------header style start-------------- */
 .header{
@@ -62,6 +66,43 @@ font-family: 'Work Sans', sans-serif;
     margin-top: 20px;
     width: 100%;
 }
+
+ /* -----------features section css start -------------- */
+.features{
+    display: flex;
+    align-items: center;
+}
+/* .img-container, .features-info{
+    width: 40%;
+} */
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.features-info{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.features-title{
+    font-size: 2.8rem;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.text-features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.features-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400px;
+    padding: 40px 0px;
+}
+
+ /* -----------features section css end -------------- */
 
 /* -----------header style end-------------- */
 
