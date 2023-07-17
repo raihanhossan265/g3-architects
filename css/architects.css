@@ -140,12 +140,25 @@ main{
     font-weight: 600;
     color: #424242;
 }
-
-
-
-
-
  /* -----------Facts section html end -------------- */
+
+ /* -----------sponspors section css start ------ */
+.sponspors{
+    text-align: center;
+}
+.sponspores-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+.sponspores-img-container img{
+    width: 165px;
+}
+
+
+ /* -----------sponspors section css end ------ */
 
 /* Responsive media queries */
 /* mobile Devices */
@@ -155,7 +168,8 @@ main{
     }
     .nav,
     .features,
-    .facts-card-container
+    .facts-card-container,
+    .sponspores-img-container
     {
         flex-direction: column;
     }
@@ -177,7 +191,9 @@ main{
     .header{
         padding: 40px;
     }
-    .nav, .features{
+    .nav, 
+    .features,
+    .sponspores-img-container{
         flex-direction: column;
     }
 }
