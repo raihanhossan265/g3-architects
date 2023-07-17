@@ -7,7 +7,17 @@ font-family: 'Work Sans', sans-serif;
 }
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 50px auto;
+}
+.section-title{
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.section-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* -----------header style start-------------- */
@@ -66,6 +76,9 @@ main{
     margin-top: 20px;
     width: 100%;
 }
+/* -----------header style end-------------- */
+
+
 
  /* -----------features section css start -------------- */
 .features{
@@ -104,7 +117,35 @@ main{
 
  /* -----------features section css end -------------- */
 
-/* -----------header style end-------------- */
+
+ /* -----------Facts section html start -------------- */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0px;
+}
+.card{
+    border: 1px solid #FF900E;
+    text-align: center;
+    border-radius: 8px;
+    padding: 30px;
+}
+.card-title{
+    font-size: 1.25rem;
+    color: #727272;
+    font-weight: 600;
+}
+.card-stats{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #424242;
+}
+
+
+
+
+
+ /* -----------Facts section html end -------------- */
 
 /* Responsive media queries */
 /* mobile Devices */
@@ -112,8 +153,22 @@ main{
     .header{
         padding: 20px;
     }
-    .nav{
+    .nav,
+    .features,
+    .facts-card-container
+    {
         flex-direction: column;
+    }
+    .img-container{
+        grid-template-columns: 1fr;
+    }
+    .features-info,
+    .facts-card-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
 }
 
@@ -122,7 +177,7 @@ main{
     .header{
         padding: 40px;
     }
-    .nav{
+    .nav, .features{
         flex-direction: column;
     }
 }
